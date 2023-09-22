@@ -8,19 +8,19 @@ body{
 
 @media screen and (max-width: 460px) {
     body{
-        height: 100vh;
+        height: 100;
         box-sizing: border-box;
         margin: 60px 0 0 0;
         padding: 0;
     }
     .main-container{
-        height: 100vh;
+        height: 640px;
         display: flex;
         justify-content: center;
     }
     .glass-rectangle{
-        width: 82%;
-        height: 55%;
+        width:82%;
+        height: 530px;
         background: rgba(255, 255, 255, 0.25);
         border-radius: 25px;
         border: 2px rgba(255, 255, 255, 0.40) solid;
@@ -98,7 +98,47 @@ body{
     }
     .decoration-blue{
         position: absolute;
-        top: 52%;
+        top: 525px;
         left: 55px;
+    }
+
+    img{
+        width: 310px;
+        height: 310px;
+        position: absolute;
+        top: 320px;
+        right: 0;
+    }
+
+    .container-carrousel{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        align-items: center;
+        align-content: space-evenly;
+    }
+
+    .carrousel-title{
+        text-align: center;
+        font-size: 25pt;
+        font-weight: 300;
+        color: #ae005d;
+        margin: 5px;
+    }
+
+    .links{
+        width: 170px;
+        height: 160px;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        border: 2px rgba(255, 255, 255, 0.40) solid;
+        backdrop-filter: blur(22.40px);
+        margin: 15px;
+        display: block;
+        text-align: center;
+        font-size: 14pt;
+        color: #D92D8A;
     }
 }
