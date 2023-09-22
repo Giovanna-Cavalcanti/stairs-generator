@@ -20,7 +20,7 @@ body{
     }
     .glass-rectangle{
         width: 82%;
-        height: 60%;
+        height: 55%;
         background: rgba(255, 255, 255, 0.25);
         border-radius: 25px;
         border: 2px rgba(255, 255, 255, 0.40) solid;
@@ -30,12 +30,10 @@ body{
 
     .glass-rectangle .main-title{
         text-align: center;
-        color: rgba(255, 255, 255, 0);
+        color: #ffffffc0;
         font-size: 40pt;
         font-weight: 800;
         word-wrap: break-word;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:  rgba(255, 255, 255);
         height: 70px;
         margin: 0;
     }
@@ -50,18 +48,18 @@ body{
     }
 
     .glass-rectangle .sub-title{
-        color: rgba(255, 255, 255, 0);
+        color: #ae005dae;
         font-size: 20pt;
         font-weight: 600;
         word-wrap: break-word;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #AE005E;
         margin: 10px 0 0  5%;
     }
 
     .description{
         color: #ffffffc7;
         margin: 10px 0 0 5%;
+        font-size: 16pt;
+        font-weight: 300;
     }
 
     .icons{
@@ -74,7 +72,7 @@ body{
     .toggle{
         height: 30px;
         width: 60px;
-        border: #fff solid 1.5px;
+        border: #ffffffb0 solid 1.5px;
         border-radius: 110px;
         margin-right: 15px;
         display: flex;
@@ -86,5 +84,21 @@ body{
         background-color: #ffffffb0;
         border-radius: 50%;
         margin: 5px;
+    }
+
+    .decoration-pink{
+        position: absolute;
+        top: 10px;
+        left: 10px
+    }
+    .decoration-yellow{
+        position: absolute;
+        top: 35px;
+        right: 5px;
+    }
+    .decoration-blue{
+        position: absolute;
+        top: 52%;
+        left: 55px;
     }
 }
