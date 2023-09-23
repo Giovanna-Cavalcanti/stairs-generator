@@ -7,9 +7,6 @@
     <title>Stairs Generator</title>
 </head>
 <body>
-    <div class="balls"></div>
-    <div class="balls"></div>
-    <div class="balls"></div>
     <div class="main-container">
         <svg class="decoration-pink" width="120" height="120" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="57.1877" cy="57.1877" r="56.5" fill="url(#paint0_linear_13_6)"/>
@@ -44,10 +41,12 @@
                 <div class="toggle">
                     <div class="toggle-button"></div>
                 </div>
-                <svg class="github" width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="white" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.7073 26.161C6.85366 27.8938 6.85366 23.2732 4.51219 22.6956M20.9756 30.2771L20.9024 25.1561C20.9464 24.6052 20.8709 24.0515 20.6812 23.5317C20.4914 23.0118 20.1917 22.5378 19.8019 22.1411C23.478 21.7368 27.3415 20.3622 27.3415 14.055C27.3412 12.4422 26.7124 10.8913 25.5854 9.72322C26.119 8.31221 26.0813 6.75257 25.48 5.36829C25.48 5.36829 24.0985 4.96399 20.9024 7.07792C18.2191 6.36036 15.3906 6.36036 12.7073 7.07792C9.51122 4.96399 8.12975 5.36829 8.12975 5.36829C7.52844 6.75257 7.4907 8.31221 8.02439 9.72322C6.88893 10.9 6.25954 12.4649 6.26829 14.0897C6.26829 20.3506 10.1317 21.7253 13.8078 22.1758C13.4226 22.5685 13.1256 23.0368 12.936 23.5503C12.7464 24.0638 12.6685 24.6109 12.7073 25.1561V30.494" stroke="white" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <a href="https://github.com/Giovanna-Cavalcanti" target="_blank">
+                    <svg class="github" width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="white" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.7073 26.161C6.85366 27.8938 6.85366 23.2732 4.51219 22.6956M20.9756 30.2771L20.9024 25.1561C20.9464 24.6052 20.8709 24.0515 20.6812 23.5317C20.4914 23.0118 20.1917 22.5378 19.8019 22.1411C23.478 21.7368 27.3415 20.3622 27.3415 14.055C27.3412 12.4422 26.7124 10.8913 25.5854 9.72322C26.119 8.31221 26.0813 6.75257 25.48 5.36829C25.48 5.36829 24.0985 4.96399 20.9024 7.07792C18.2191 6.36036 15.3906 6.36036 12.7073 7.07792C9.51122 4.96399 8.12975 5.36829 8.12975 5.36829C7.52844 6.75257 7.4907 8.31221 8.02439 9.72322C6.88893 10.9 6.25954 12.4649 6.26829 14.0897C6.26829 20.3506 10.1317 21.7253 13.8078 22.1758C13.4226 22.5685 13.1256 23.0368 12.936 23.5503C12.7464 24.0638 12.6685 24.6109 12.7073 25.1561V30.494" stroke="white" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
             <h1 class="main-title">Welcome</h1>
             <hr class="divider">
@@ -55,19 +54,34 @@
             <h3 class="sub-title">The Stairs Generator!</h3>
             <p class="description">Hope you enjoy.</p>
         </div>
-        <img src="assets/img/escada.png">
+        <img class="main-img" src="assets/img/escada.png">
     </div>
 
     <h2 class="carrousel-title">Select a mode:</h2>
         <div class="container-carrousel">
             <span class="links">
                 <h4>standard mode</h4>
+                <img class="icons-stairs standard" src="assets/img/stairs_icon.png">
+                <a href="assets/rotes/stairs-default.html">
+                    <button type="button">Try it!</button>
+                </a>
             </span>
+
             <span class="links">
                 <h4>reverse mode</h4>
+                <img class="icons-stairs reverse" src="assets/img/stairs_icon.png">
+                <a href="assets/rotes/stairs-reverse.html">
+                    <button type="button">Try it!</button>
+                </a>
             </span>
+
             <span class="links">
                 <h4>double mode</h4>
+                <img class="icons-stairs double X" src="assets/img/stairs_icon.png">   
+                <img class="icons-stairs double" src="assets/img/stairs_icon.png">
+                <a href="assets/rotes/stairs-double.html">
+                    <button type="button">Try it!</button>
+                </a>
             </span>
 
             <div class="carrousel-count active"></div>

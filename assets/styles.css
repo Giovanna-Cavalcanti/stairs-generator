@@ -102,7 +102,7 @@ body{
         left: 55px;
     }
 
-    img{
+    .main-img{
         width: 310px;
         height: 310px;
         position: absolute;
@@ -112,12 +112,9 @@ body{
 
     .container-carrousel{
         width: 100%;
-        height: auto;
+        max-width: 450px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content:center;
-        align-items: center;
-        align-content: space-evenly;
+        overflow-x: auto;
     }
 
     .carrousel-title{
@@ -125,20 +122,53 @@ body{
         font-size: 25pt;
         font-weight: 300;
         color: #ae005d;
-        margin: 5px;
+        margin: 1px;
     }
 
     .links{
-        width: 170px;
-        height: 160px;
+        min-width: 180px;
+        height: 180px;
         background: rgba(255, 255, 255, 0.25);
         border-radius: 20px;
         border: 2px rgba(255, 255, 255, 0.40) solid;
         backdrop-filter: blur(22.40px);
-        margin: 15px;
-        display: block;
+        margin: 25px 15px 50px 10px;    
         text-align: center;
         font-size: 14pt;
         color: #D92D8A;
+    }
+
+
+    .icons-stairs{
+        width: 70px;
+        margin: 0 5px 15px 0;
+        display: inline;
+    }
+
+    .icons-stairs.reverse{
+        transform: scaleY(-1);
+    }
+
+    .icons-stairs.double{
+        width: 60px;
+        
+    }
+
+    .icons-stairs.double.X{
+        transform: scaleX(-1);
+    }
+
+    h4{
+        margin: 20px 0 15px 0;
+    }
+
+    button{
+        border: 0;
+        width: 100px;
+        height: 30px;
+        color: #ffffffb0;
+        background-color: #DE5BA4;
+        font-size: 13pt;
+        border-radius: 20px;
     }
 }
