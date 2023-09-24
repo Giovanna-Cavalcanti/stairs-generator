@@ -173,7 +173,7 @@
 
     @media screen and (max-width: 500px){
         .main-container{
-            height: 640px;
+            height: 620px;
         }
         .glass-rectangle{
             height: 530px;
@@ -181,9 +181,10 @@
 
         .container-carrousel{
             width: 100%;
-            max-width: 450px;
+            max-width: 500px;
             display: flex;
             overflow-x: auto;
+            margin: 0;
         }
 
         .links{
@@ -195,8 +196,9 @@
         }
         .main-img{
             width: 65vw;
+            top: 300px;
         }
         .decoration-blue{
-            top: 55%;
+            top: 480px;
         }
     }
