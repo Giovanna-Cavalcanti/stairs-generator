@@ -4,7 +4,6 @@
         font-family: 'Inter', sans-serif;
         background-color: #E9ACD8;
         box-sizing: border-box;
-        margin: 10% 0 0 0;
         padding: 0;
     }
     .main-container{
@@ -25,7 +24,7 @@
     .main-title{
         text-align: center;
         color: #ffffffc0;
-        font-size: 430%;
+        font-size: 80pt;
         font-weight: 800;
         word-wrap: break-word;
         height: 70px;
@@ -38,13 +37,13 @@
         border-width: 0;
         border-bottom-width: 0.1rem;
         position: relative;
-        margin: 5% auto 5% auto;
+        margin: 3% auto 3% auto;
     }
 
     .sub-title{
         color: #ae005dae;
         font-size: 20pt;
-        font-weight: 600;
+        font-weight: 700;
         word-wrap: break-word;
         margin: 3% 0 0  7%;
     }
@@ -102,7 +101,7 @@
     }
 
     .main-img{
-        width: 45vw;
+        width: 40vw;
         height: auto;
         position: absolute;
         top: 35%;
@@ -120,7 +119,7 @@
         font-size: 250%;
         font-weight: 300;
         color: #ae005d;
-        margin: 1px;
+        margin: 3px;
     }
 
     .links{
@@ -130,7 +129,7 @@
         border-radius: 20px;
         border: 2px rgba(255, 255, 255, 0.40) solid;
         backdrop-filter: blur(22.40px);
-        margin: 25px 15px 50px 25px;    
+        margin: 25px 25px 50px 25px;    
         text-align: center;
         font-size: 14pt;
         color: #D92D8A;
@@ -139,7 +138,7 @@
 
     .icons-stairs{
         width: 45%;
-        margin: 0 5px 5px auto;
+        margin: 0 5px auto auto;
         display: inline;
     }
 
@@ -149,6 +148,7 @@
 
     .icons-stairs.double{
         width: 35%;
+
         
     }
 
@@ -157,7 +157,7 @@
     }
 
     h4{
-        margin: 10% auto 15% auto;
+        margin: 10% auto 10% auto;
     }
 
     button{
@@ -168,35 +168,162 @@
         background-color: #DE5BA4;
         font-size: 13pt;
         border-radius: 20px;
-        margin: 15px auto;
+        margin: 15px auto 15px auto;
     }
 
-    @media screen and (max-width: 500px){
+    /* small mobile version */
+    @media screen and (max-width: 650px){
+        body{
+            margin: 10% 0 0 0;
+        }
+        .decoration-pink{
+            position: absolute;
+            top: 10px;
+            left: 10px; 
+        }
+        .decoration-yellow{
+            position: absolute;
+            top: 35px;
+            right: 5px;
+        }
+        .decoration-blue{
+            position: absolute;
+            top: 480px;
+            left: 55px;
+        }
+        /* styles for the main screen */
         .main-container{
             height: 620px;
         }
         .glass-rectangle{
             height: 530px;
         }
-
-        .container-carrousel{
-            width: 100%;
-            max-width: 500px;
-            display: flex;
-            overflow-x: auto;
-            margin: 0;
-        }
-
-        .links{
-            min-width: 40%;
-        }
-
         .main-title{
-            font-size: 360%;
+            font-size: 40pt;
+        }
+        .description{
+            font-size: 17pt;
+        }
+        .sub-title{
+            font-size: 24pt;
         }
         .main-img{
             width: 65vw;
             top: 300px;
+        }
+    /* styles for carrossel mobile */
+        .carrousel-title{
+            text-align: center;
+            font-size: 250%;
+            font-weight: 300;
+            color: #ae005d;
+            margin: 3px;
+        }
+        .container-carrousel{
+            width: 100%;
+            max-width: 6500px;
+            display: flex;
+            overflow-x: auto;
+            margin: 10px 0 0 0;
+        }
+        .links{
+            min-width: 40%;
+            min-height: 40%;
+            margin: 12px;
+        }
+        .icons-stairs{
+            width: 45%;
+            margin: 0 5px 0 auto;
+            display: inline;
+        }    
+        .icons-stairs.reverse{
+            transform: scaleY(-1);
+        }    
+        .icons-stairs.double{
+            width: 35%; 
+            margin-bottom: 8%;           
+        }   
+        .icons-stairs.double.X{
+            transform: scaleX(-1);
+        }
+        button{
+            border: none;
+            width: 55%;
+            height: 15%;
+            color: #ffffffb0;
+            background-color: #DE5BA4;
+            font-size: 13pt;
+            border-radius: 20px;
+            margin: 15px auto 25px auto;
+        }
+    }
+
+    /* tablet version styles */
+    @media screen and (min-width: 650px) and (max-width:900px){
+        body{
+            margin: 5% 0 0
+        }
+        .main-container{
+            height: 80vh;
+        }
+        .glass-rectangle{
+            height: 100%;
+        }
+        .icons{
+        margin: 3% 6% 0 15%;
+        
+        }
+        .github{
+            width: 3.1rem;
+            height: 3.1rem;
+            margin-left: 10px;
+        }
+        .toggle{
+            height: 2.1rem;
+            width: 4.5rem;
+        }
+        .toggle-button{
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        .main-title{
+            font-size: 70pt;
+        }
+        .divider{
+        margin: 2.5% auto 2.5% auto;
+        }
+        .description{
+            font-size: 20pt;
+            
+        }
+        .sub-title{
+            font-size: 30pt;
+        }
+        .main-img{
+            width: 55vw;
+            top: 300px;
+        }
+        .container-absolute{
+            position: absolute;
+            top: 410px;
+            left: 13%;
+        }
+        .container-carrousel{
+            display: flex;
+            margin: 0;
+        }
+
+        .carrousel-title{
+            display: none;
+        }
+
+        .links{
+            min-width: 30%;
+            margin: 12px;
+        }
+
+        .main-title{
+            font-size: 360%;
         }
         .decoration-blue{
             top: 480px;
