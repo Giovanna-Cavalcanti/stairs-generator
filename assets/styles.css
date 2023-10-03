@@ -5,6 +5,7 @@
         background-color: #E9ACD8;
         box-sizing: border-box;
         padding: 0;
+        transition: all 0.5s linear;
     }
     .main-container{
         height: 80vh;
@@ -13,24 +14,26 @@
     }
     .glass-rectangle{
         width:82%;
-        height: 70vh;
+        height: 90vh;
         background: rgba(255, 255, 255, 0.25);
         border-radius: 25px;
         border: 2px rgba(255, 255, 255, 0.40) solid;
         backdrop-filter: blur(22.40px);
-
     }
 
     .main-title{
-        text-align: center;
         color: #ffffffc0;
+        display: inline;
         font-size: 80pt;
         font-weight: 800;
         word-wrap: break-word;
         height: 70px;
-        margin: 0;
+        margin: 2.5% 0 5px 5%;
     }
-
+    .main-title::after{
+        content: url(img/smileFace.svg);
+        margin: 0 auto 0 15px;
+    }
     .divider{
         width: 85%;
         color: #fff;
@@ -39,7 +42,6 @@
         position: relative;
         margin: 3% auto 3% auto;
     }
-
     .sub-title{
         color: #ae005dae;
         font-size: 20pt;
@@ -47,7 +49,6 @@
         word-wrap: break-word;
         margin: 3% 0 0  7%;
     }
-
     .description{
         color: #ffffffc7;
         margin: 3% 0 0 7%;
@@ -56,58 +57,89 @@
     }
 
     .icons{
-        margin: 6% 8% 0 15%;
+        margin: 2.5% 5% 0 15%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        /* position: absolute; */
         
     }
-
     .github{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .circle{
+        stroke: white;
+    }
+    .git{
+        stroke: white;
     }
     .toggle{
-        height: 2rem;
-        width: 4rem;
-        border: #ffffffb0 solid 1.5px;
+        height: 2.5rem;
+        width: 5rem;
+        border: #ffffffb0 solid 1.7px;
         border-radius: 110px;
         margin-right: 15px;
         display: flex;
         align-items: center;
     }
     .toggle-button{
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2rem;
+        height: 2rem;
         background-color: #ffffffb0;
         border-radius: 50%;
         margin: 5px;
+        translate: 0;
+        transition: translate 0.5s linear;
     }
 
+/* ---------------colors and position svg Pink------------------ */
     .decoration-pink{
         position: absolute;
         top: 10px;
         left: 10px; 
     }
+    .Stop1{
+        stop-color: #8B3072;
+    }
+    .Stop2{
+        stop-color: #F88282;
+    }
+/* ---------------colors and position svg Yellow------------------ */
     .decoration-yellow{
         position: absolute;
         top: 35px;
         right: 5px;
     }
+    .Stop3{
+        stop-color: #E6DC89;
+    }
+    .Stop4{
+        stop-color: #DA74BD;
+    }
+/* ---------------colors and position svg Blue------------------ */
     .decoration-blue{
         position: absolute;
         top: 65%;
         left: 55px;
     }
+    .Stop5{
+        stop-color: #8B3072;
+    }
+    .Stop6{
+        stop-color: #82CDF8;
+    }
+/* -------------------------------------------------------------- */
 
     .main-img{
-        width: 40vw;
+        width:60vh;
         height: auto;
         position: absolute;
         top: 35%;
         right: 0;
     }
 
+    /* carrousel style */
     .container-carrousel{
         width: 60%;
         display: flex;
@@ -134,32 +166,25 @@
         font-size: 14pt;
         color: #D92D8A;
     }
-
-
     .icons-stairs{
         width: 45%;
         margin: 0 5px auto auto;
         display: inline;
     }
-
     .icons-stairs.reverse{
         transform: scaleY(-1);
     }
 
     .icons-stairs.double{
         width: 35%;
-
-        
+        margin-bottom: 15px;
     }
-
     .icons-stairs.double.X{
         transform: scaleX(-1);
     }
-
     h4{
         margin: 10% auto 10% auto;
     }
-
     button{
         border: 0;
         width: 55%;
@@ -176,6 +201,19 @@
         body{
             margin: 10% 0 0 0;
         }
+        .dark{
+            .main-title{
+                color: #3e2335cd;                
+            }
+            .sub-title{
+                color: #e7a7c9d2;
+            }
+            .toggle-button{
+                translate: 37px;
+            }
+
+            }
+
         .decoration-pink{
             position: absolute;
             top: 10px;
@@ -198,8 +236,31 @@
         .glass-rectangle{
             height: 530px;
         }
+        .icons{
+            margin: 2.5% 5% 0 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .github{
+            width: 3.1rem;
+            height: 3.1rem;
+            margin-left: 10px;
+        }
+        .toggle{
+            height: 2.1rem;
+            width: 4.5rem;
+        }
+        .toggle-button{
+            width: 1.7rem;
+            height: 1.7rem;
+            
+        }
         .main-title{
-            font-size: 40pt;
+            font-size: 36pt;
+            display: block;
+            text-align: center;
+            margin: 2.5% auto 5px auto;
         }
         .description{
             font-size: 17pt;
@@ -259,19 +320,53 @@
     }
 
     /* tablet version styles */
-    @media screen and (min-width: 650px) and (max-width:900px){
+    @media screen and (min-width: 650px) and (max-width:1024px){
         body{
-            margin: 5% 0 0
+            margin: 5% 0 0;
+        }
+        .dark{
+            .main-title{
+                color: #3e2335cd;                
+            }
+            .sub-title{
+                color: #e7a7c9d2;
+            
+            }
+            .toggle-button{
+                translate: 33px;
+            }
         }
         .main-container{
             height: 80vh;
+        }
+        .decoration-pink{
+            position: absolute;
+            scale: 1.3;
+            top: 3%;
+            left: 50px; 
+        }
+        .decoration-yellow{
+            position: absolute;
+            scale: 1.6;
+            top: 65px;
+            right: 60px;
+        }
+        
+        .decoration-blue{
+            position: absolute;
+            scale: 1.5;
+            top: 570px;
+            left: 8%;
         }
         .glass-rectangle{
             height: 100%;
         }
         .icons{
         margin: 3% 6% 0 15%;
-        
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         }
         .github{
             width: 3.1rem;
@@ -279,22 +374,23 @@
             margin-left: 10px;
         }
         .toggle{
-            height: 2.1rem;
+            height: 2.4rem;
             width: 4.5rem;
         }
         .toggle-button{
-            width: 1.7rem;
-            height: 1.7rem;
+            width: 1.9rem;
+            height: 1.9rem;
         }
         .main-title{
-            font-size: 70pt;
+            font-size: 55pt;
+            margin: 0 7%;
         }
         .divider{
-        margin: 2.5% auto 2.5% auto;
+            width: 80%;
+            margin: 2.5% auto 2.5% 7%;
         }
         .description{
             font-size: 20pt;
-            
         }
         .sub-title{
             font-size: 30pt;
@@ -303,9 +399,12 @@
             width: 55vw;
             top: 300px;
         }
+        /* carrousel style */
+
         .container-absolute{
             position: absolute;
-            top: 410px;
+            margin-top: 50px;
+            top: 420px;
             left: 13%;
         }
         .container-carrousel{
@@ -318,14 +417,176 @@
         }
 
         .links{
-            min-width: 30%;
+            min-width: 33.33%;
             margin: 12px;
         }
+    }
 
-        .main-title{
-            font-size: 360%;
+    /* big screens styles */
+    @media screen and (min-width: 1024px){
+        body{
+            margin: 1% 0 0;
+
         }
+        .dark{
+            .main-title{
+                color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #3e2335cd;
+                
+            }
+            .sub-title{
+                color: transparent;
+                -webkit-text-stroke-color: #e7a7c9d2;
+            }
+            .toggle-button{
+                translate: 40px;
+            }
+        }
+        .main-container{
+            height: 95vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .icons{
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+        .main-title{
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #ffffffc0;
+        }
+        .divider{
+            width: 65%;
+            color: #fff;
+            border-width: 0;
+            border-bottom-width: 0.1rem;
+            position: relative;
+            margin: 0 auto 3% 5%;
+        }
+
+        .description{
+            font-size: 24pt;
+            margin: 1% 0 0 5%;
+        }
+        .sub-title{
+            font-size: 38pt;
+            margin: 1% 0 0 5%;
+            color: transparent;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: #ae005dae;
+
+        }
+        .main-img{
+            width: 65vh;
+            height: auto;
+            position: absolute;
+            top: 25%;
+            right: 10%;
+        }
+
+        .decoration-pink{
+            position: absolute;
+            scale: 1.5;
+            top: 5%;
+            left: 100px; 
+        }
+        .decoration-yellow{
+            position: absolute;
+            scale: 2;
+            top: 95px;
+            right: 100px;
+        }
+        
         .decoration-blue{
-            top: 480px;
+            position: absolute;
+            scale: 1.7;
+            top: 68%;
+            left: 8%;
+        }
+    
+
+    /* carrousel styles    */
+        .container-absolute{
+            position: absolute;
+            margin-top: 50px;
+            top: 360px;
+            left: 13%;
+        }
+        .container-carrousel{
+            display: flex;
+            margin: 0;
+            width: 40%;
+        }
+
+        .carrousel-title{
+            display: none;
+        }
+
+        .links{
+            min-width: 33.33%;
+            margin: 12px;
         }
     }
+
+    .dark{
+
+        background-color: #483241;
+
+        .Stop1{
+            stop-color: #E9DF82;
+        }
+        .Stop2{
+            stop-color: #F88282;
+        }
+        .Stop3{
+            stop-color: #BE3678;
+        }
+        .Stop4{
+            stop-color: #91CFB1;
+        }
+        .Stop5{
+            stop-color: #69C667
+        }
+        .Stop6{
+            stop-color: #5F95B4;
+        }
+
+        .glass-rectangle{
+            border: 2px #9b417dc1 solid;
+        }
+
+        .circle{
+            stroke: #3E2335;
+        }
+
+        .toggle{
+            border: #3e2335d7 solid 1.7px;
+        }
+        .toggle-button{
+            background-color: #3e2335d7;
+        }
+
+        .divider{
+            border-color: #14040e;
+            border-width: 0px;
+            border-bottom-width: 0.1rem;
+        }
+
+        .description{
+            color: #3E2335;
+        }
+
+        .carrousel-title{
+            color: #f29cca;
+        }
+
+        .h4{
+            color: #6e1344;
+        }
+    }
+
